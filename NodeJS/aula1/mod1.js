@@ -1,0 +1,49 @@
+/* 
+///// +++++ Módulos internos ++++++\\\\\\
+
+São arquivos do próprio projeto.
+Devem ser importados usando caminho relativo ou absoluto. 
+
+
+
+///// +++++  Módulos externos  ++++++\\\\\\
+
+Incluem:
+
+Core modules do Node.js (fs, path, http)
+
+Pacotes instalados (express, axios)
+
+*/
+
+
+
+
+class Pessoa {
+    constructor(nome) {
+        this.nome = nome;
+    }
+}
+exports.Pessoa = Pessoa;
+
+
+
+
+const nome = 'Kaleb'
+const sobrenome = 'Canabarro'
+const falaNome = () => nome + ' ' + sobrenome
+    
+
+module.exports.nome = nome; 
+module.exports.sobrenome = sobrenome;
+module.exports.falaNome = falaNome;
+
+
+
+
+
+// exports.nome = nome; 
+// exports.sobrenome = sobrenome;
+// exports.falaNome = falaNome;
+
+// console.log(exports);
